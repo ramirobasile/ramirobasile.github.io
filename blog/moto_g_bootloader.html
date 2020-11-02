@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ramiro Basile" />
+  <meta name="dcterms.date" content="2020-06-02" />
+  <title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="resources/style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>&#x1F3E0; <a href="../index.html">Volver al índice</a></p>
+<hr />
+<header id="title-block-header">
+<h1 class="title">Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</h1>
+<p class="author">Ramiro Basile</p>
+<p class="date">2020-06-02</p>
+</header>
+<p>Si por alguna razón estabas buscando rootear o flashearle otro ROM a tu Moto G1, hay una chance de que no logres desbloquear el bootloader.</p>
+<p>A mi me paso con un XT1032, y según entiendo cualquier Moto G1 con Android 4.4.4 tiene este problema gracias a un bug. El problema que tenía yo era que, una vez que ingresaba la clave que te manda por mail Motorola para desbloquear el bootloader, me tiraba “Password incorrect” o algo parecido. <strong>Esto es un bug</strong>, probablemente no es que copiaste mal la clave.</p>
+<p>Motorola sacó un fix, hace tiempo, pero fue un dolor de huevos encontrarlo porque el hilo original del foro de Motorola ya no existe y de culo lo encontre en XDA; asi que lo dejo acá para la posteridad.</p>
+<h2 id="moto-g-bootloader-fix">Moto G bootloader fix</h2>
+<p>Magnet: <a href="magnet:?xt=urn:btih:22827885746470081f5011dcbecae6af6473908a&amp;dn=G%5F4.4.4.BL%5FFix.zip">G_4.4.4.BL_Fix</a> Google Drive: <a href="https://drive.google.com/file/d/1VCc70WFL8LJ2rDHUWibYatKRjrGi_Elp/view?usp=sharing">G_4.4.4.BL_Fix</a></p>
+<h2 id="como-arreglar-y-desbloquear-el-bootloader">Como arreglar y desbloquear el bootloader</h2>
+<ul>
+<li>Bajate el fix y extraelo en algún lado</li>
+<li>Seguí todos los pasos de <img src="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a" alt="la página de Motorola" /> hasta que te diga que ingreses la clave</li>
+<li>Ahora abri el READMEFIRST.rtf y, <strong>leyendolo con cuidado</strong>, hace lo que te diga</li>
+<li>Y una vez hecho eso ya podes ingresar la clave para desbloquear el bootloader y todo deberia andar perfecto</li>
+</ul>
+<hr />
+<small>© 2020 Ramiro Basile. Todos los derechos reservados. Por las dudas, ¿viste?</small>
+</body>
+</html>

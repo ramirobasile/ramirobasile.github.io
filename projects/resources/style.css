@@ -1,0 +1,24 @@
+body {
+	margin: auto;
+	max-width: 60ch;
+	line-height: 1.5;
+}
+
+li {
+	margin-bottom: 0.66em;
+}
+
+figure {
+	margin: auto;
+	max-width: 75%;
+}
+
+figure img {
+	width: 100%;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+	font-size: smaller; /* relative */
+}
