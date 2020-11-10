@@ -9,16 +9,19 @@ li {
     margin-bottom: 0.66em;
 }
 
+div.figure,
 figure {
     margin: auto;
     text-align: center;
 }
 
+div.figure img,
 figure img {
     max-width: 100%;
     max-height: 60vh;
 }
 
+p.caption,
 figcaption {
     font-style: italic;
     font-size: smaller;
