@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Releases de TennisfightingGame</title>
+    <link href="https://ramirobasile.github.io/website2/projects/tennis-fighting-game.html"/>
+    <author>
+        <name>Ramiro Basile</name>
+    </author>
+
+    <entry>
+        <title>TennisFightingGame v0.2</title>
+        <link href="https://ramirobasile.github.io/website2/projects/tennis-fighting-game.html#releases" />
+        <updated>2020-10-09</updated>
+        <content type="html">
+            <ul>
+                <li><p><a href="magnet:?xt=urn:btih:195ca0759da07ed040ca99ca23f40c8873ff6362&amp;dn=TennisFightingGame-v0.2-linux-x64.zip">Linux 64-bit</a> (76,81 MB)</p></li>
+                <li><p><a href="magnet:?xt=urn:btih:d771287d4c3c09251c9a97e46246f1ccf8d40e00&amp;dn=TennisFightingGame-v0.2-win-x64.zip">Windows 64-bit</a> (76,24 MB)</p></li>
+                <li><p><a href="magnet:?xt=urn:btih:04968a9a6c03172807b87c893943eab90d8a6d29&amp;dn=TennisFightingGame-v0.2-source.zip">Source</a> (8,56 MB)</p></li>
+            </ul>
+        </content>
+</feed>
