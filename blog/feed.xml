@@ -140,4 +140,28 @@
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
     </entry>
+
+    <entry>
+        <title>Flatpak</title>
+        <link href="https://ramirobasile.github.io/website2/blog/flatpak.html" />
+        <updated>2020-11-22</updated>
+        <content type="html"><body>
+<p>🏠 <a href="../index.html">Volver al índice</a></p>
+<hr/>
+<div id="header">
+<h1 class="title">Flatpak</h1>
+<h2 class="author">Ramiro Basile</h2>
+<h3 class="date">2020-11-22</h3>
+</div>
+<p><em>Nota: Agarrá todo esto con pinza que yo no soy ningún experto en Linux, solo argentino.</em></p>
+<p>Me gusta la idea de Flatpak. Es bastante obvio que la distribución de software en el ecosistema infinitamente particionado de Linux es bastante horrenda, nadie va a defenderla demasiado. Todo recae en la idea de compartir todas las librerías: Una buena idea en principio, pero tan tedioso a la hora de distribuir software que necesitas poner equipos intermediarios que manejen repositorios de paquetes para cada distribución. Esto no es ideal.</p>
+<p>Tener runtimes resulta bastante útil por varias razones que seguro ya conocen: Permite correr distintas versiones de un programa en paralelo; hace más útiles a los bug reports porque serían independientes de plataforma; no ata a los desarrolladores a versiones especificas de librerías según a que distribuciones apunten; etc. Si, lo pagas con redundancia y programas más pesados, pero vale la pena hoy en día. Es una solución bastante más practica que no requiere coordinación entre distintas personas, cosa que <em>a veces</em> puede ser difícil en el mundo de Linux.</p>
+<p>Y Flatpak, con una implementación de runtimes bastante robusta, el apoyo de varias de las distribuciones más usadas y <a href="https://forum.snapcraft.io/t/is-the-snapcraft-io-back-end-server-open-source/9202">sin Canonical involucrado</a>, lo que solamente puede ser bueno, estaría en una posición bastante buena para simplificar la distribución de software en Linux, ¿no?</p>
+<p>Bueno, no se. Flatpak no es solo un package manager, también hace <a href="https://docs.flatpak.org/en/latest/sandbox-permissions.html">sandboxing</a>. Cada flatpak tiene que pedir permiso para interfacear con cualquier cosa fuera de su runtime, como el filesystem, por ejemplo. Tal y como las librerías compartidas, suena lindo hasta que lo tienen que lo tienen que implementar los desarrolladores. Se ve que pedirles que sus programas vivan en un sandbox y cumplan especificaciones bastante complicadas resulta ser casi igual de optimista que esperar que manejen ellos solos la distribución de sus programas para cada package manager.</p>
+<p>Basta con que te bajes algunos flatpak no triviales para que des con algún drama con los permisos. Y perdoname, pero si la implementación del sandboxing se mete en el medio, entonces no la quiero. Hasta ahora no tuvimos demasiados problemas sin sandboxing, y siempre y cuando mantengamos nuestro código libre imagino que no vamos a tener muchos más.</p>
+<p>Si no fuera por el sandboxing, me parece que Flatpak se volvería un estándar bastante rápido. Pero como están las cosas, distribuir tu programa como flatpak es aún más molesto que distribuir a cualquier otro package manager, y me parece una lástima la verdad.</p>
+<hr/>
+<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+</body></content>
+    </entry>
 </feed>
