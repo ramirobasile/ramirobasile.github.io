@@ -1,13 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Ramiro Basile" />
-  <meta name="date" content="2020-06-02" />
+  <meta name="dcterms.date" content="2020-06-02" />
   <title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
-  <style type="text/css">
+  <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -15,16 +15,19 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <link rel="stylesheet" href="resources/style.css" type="text/css" />
+  <link rel="stylesheet" href="resources/style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 <p>&#x1F3E0; <a href="../index.html">Volver al índice</a></p>
 <hr />
-<div id="header">
+<header id="title-block-header">
 <h1 class="title">Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-06-02</h3>
-</div>
+<p class="author">Ramiro Basile</p>
+<p class="date">2020-06-02</p>
+</header>
 <p>Si por alguna razón estabas buscando rootear o flashearle otro ROM a tu Moto G1, hay una chance de que no logres desbloquear el bootloader.</p>
 <p>A mi me paso con un XT1032, y según entiendo cualquier Moto G1 con Android 4.4.4 tiene este problema gracias a un bug. El problema que tenía yo era que, una vez que ingresaba la clave que te manda por mail Motorola para desbloquear el bootloader, me tiraba “Password incorrect” o algo parecido. <strong>Esto es un bug</strong>, probablemente no es que copiaste mal la clave.</p>
 <p>Motorola sacó un fix, hace tiempo, pero fue un dolor de huevos encontrarlo porque el hilo original del foro de Motorola ya no existe y de culo lo encontre en otro <a href="https://forum.xda-developers.com/moto-g/general/solved-moto-g-unlock-bootloader-t3114322">hilo de XDA</a>; asi que lo dejo acá para la posteridad:</p>

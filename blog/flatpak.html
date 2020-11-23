@@ -1,13 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Ramiro Basile" />
-  <meta name="date" content="2020-11-22" />
+  <meta name="dcterms.date" content="2020-11-22" />
   <title>Flatpak</title>
-  <style type="text/css">
+  <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -15,16 +15,19 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <link rel="stylesheet" href="resources/style.css" type="text/css" />
+  <link rel="stylesheet" href="resources/style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 <p>&#x1F3E0; <a href="../index.html">Volver al índice</a></p>
 <hr />
-<div id="header">
+<header id="title-block-header">
 <h1 class="title">Flatpak</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-11-22</h3>
-</div>
+<p class="author">Ramiro Basile</p>
+<p class="date">2020-11-22</p>
+</header>
 <p><em>Nota: Agarrá todo esto con pinza que yo no soy ningún experto en Linux, solo argentino.</em></p>
 <p>Me gusta la idea de Flatpak. Es bastante obvio que la distribución de software en el ecosistema infinitamente particionado de Linux es bastante horrenda, nadie va a defenderla demasiado. Todo recae en la idea de compartir todas las librerías: Una buena idea en principio, pero tan tedioso a la hora de distribuir software que necesitas poner equipos intermediarios que manejen repositorios de paquetes para cada distribución. Esto no es ideal.</p>
 <p>Tener runtimes resulta bastante útil por varias razones que seguro ya conocen: Permite correr distintas versiones de un programa en paralelo; hace más útiles a los bug reports porque serían independientes de plataforma; no ata a los desarrolladores a versiones especificas de librerías según a que distribuciones apunten; etc. Si, lo pagas con redundancia y programas más pesados, pero vale la pena hoy en día. Es una solución bastante más practica que no requiere coordinación entre distintas personas, cosa que <em>a veces</em> puede ser difícil en el mundo de Linux.</p>
