@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Ramiro Basile" />
-  <meta name="dcterms.date" content="2020-10-04" />
+  <meta name="date" content="2020-10-04" />
   <title>Como usar GNOME</title>
-  <style>
+  <style type="text/css">
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -15,44 +15,43 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <link rel="stylesheet" href="resources/style.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <link rel="stylesheet" href="resources/style.css" type="text/css" />
 </head>
 <body>
 <p>&#x1F3E0; <a href="../index.html">Volver al índice</a></p>
 <hr />
-<header id="title-block-header">
+<div id="header">
 <h1 class="title">Como usar GNOME</h1>
-<p class="author">Ramiro Basile</p>
-<p class="date">2020-10-04</p>
-</header>
+<h2 class="author">Ramiro Basile</h2>
+<h3 class="date">2020-10-04</h3>
+</div>
 <h2 id="usá-el-teclado">Usá el teclado</h2>
 <p>GNOME y todos sus programas están llenos de atajos–y no por mera accesibilidad–están para agilizar las cosas. Cada aplicación de GNOME tiene una lista de atajos y los de GNOME en sí están listados en los ajustes, así que son bastante fáciles de descubrir.</p>
 <p>En GNOME tampoco usas menú de inicio sino que apretas Super (Windows) y busca la aplicación por nombre, lo que también te da acceso a los <a href="https://developer.gnome.org/SearchProvider/">search providers</a> de GNOME.</p>
-<figure>
-<img src="resources/search.gif" title="GIF animado demostrando la función de busqueda de GNOME" alt="" /><figcaption>Búsqueda de aplicaciones, archivos, emojis y expresiones de calculadora en GNOME</figcaption>
-</figure>
+<div class="figure">
+<img src="resources/search.gif" title="GIF animado demostrando la función de busqueda de GNOME" alt="" />
+<p class="caption">Búsqueda de aplicaciones, archivos, emojis y expresiones de calculadora en GNOME</p>
+</div>
 <h2 id="repartí-tus-ventanas-en-escritorios">Repartí tus ventanas en escritorios</h2>
 <p>Cada escritorio tiene que vagamente representar una actividad: un escritorio para tus ejercicios y libros de álgebra, otro para tu navegador, otro para tu editor de texto y terminales, etc.</p>
-<figure>
-<img src="resources/workspaces.gif" title="GIF animado mostrando varios cambios de escritorios en GNOME" alt="" /><figcaption>Manejando varios escritorios en GNOME</figcaption>
-</figure>
+<div class="figure">
+<img src="resources/workspaces.gif" title="GIF animado mostrando varios cambios de escritorios en GNOME" alt="" />
+<p class="caption">Manejando varios escritorios en GNOME</p>
+</div>
 <h2 id="no-instales-extensiones">No instales extensiones</h2>
 <p>Y asegurate de que tu distribución instale GNOME <em>vanilla</em> y no lleno de extensiones. En Ubuntu, por ejemplo, podes instalar <a href="https://packages.ubuntu.com/bionic/vanilla-gnome-desktop">vanilla-gnome-desktop</a> para evitar usar la versión atrofiada de GNOME con la que viene Ubuntu por defecto.</p>
 <h2 id="no-me-digas-que-hacer-no-sos-mi-mamá">No me digas que hacer, no sos mi mamá</h2>
-<p>¿Para qué te digo todo esto? Porque GNOME no se maneja como Windows y muchos no lo entienden. Windows y la mayoría de otros DE<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> usan una <a href="https://en.wikipedia.org/wiki/Desktop_metaphor">metáfora tradicional de escritorio</a> que, en 2020 d.C., ya es un poco obsoleta–una reliquia de un tiempo donde no todo el mundo sabia usar una computadora y quizás una cierta abstracción a algo familiar, un escritorio, ayudara.</p>
+<p>¿Para qué te digo todo esto? Porque GNOME no se maneja como Windows y muchos no lo entienden. Windows y la mayoría de otros DE<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> usan una <a href="https://en.wikipedia.org/wiki/Desktop_metaphor">metáfora tradicional de escritorio</a> que, en 2020 d.C., ya es un poco obsoleta–una reliquia de un tiempo donde no todo el mundo sabia usar una computadora y quizás una cierta abstracción a algo familiar, un escritorio, ayudara.</p>
 <p>Si te manejas con varios escritorios y ventanas siempre visibles, de repente tener una barra de tareas que lista las ventanas abiertas se vuelve redundante. Y hasta podrías decir que se vuelve innecesario que ciertas aplicaciones se escondan en segundo plano; en Windows tener una ventana abierta innecesaria molesta y ocupa espacio–ya sea de escritorio o en la barra de tareas–pero en GNOME la podes tirar a otro escritorio y no tenes porque volver a verla.</p>
 <p>Si tu DE y tus programas tienen integrados en sus diseños una serie de atajos flexibles y útiles, ¿hace falta usar tanto en mouse? Y si no usas mucho el mouse, ¿hace falta que cada herramienta del programa, útil o no, este expuesta en la interfaz a menos de 2 clicks? ¿Hace falta que todos los botones sean minúsculos si no vamos a exponer muchos a la vez? ¿Porque no hacerlos un poquito más grandes y con más información, así de paso no solo son más accesibles, sino que, al no necesitar tanta precisión para clickearlos, se necesite usar el mouse aún menos.</p>
 <p>Con solo cambiar un poquito como usas una computadora, podes eliminar un montón de redundancia, un montón ruido visual, un montón de overhead de mantenimiento y podes simplificar el <em>workflow</em>–cosas que otros DE (y Windows), por más que te permitan manejarte con atajos y usar varios escritorios, no hacen, porque el <strong>cómo</strong> usas la computadora no esta integrado en su diseño.</p>
 <p>Así es como todo el mundo termina usando su computadora fundamentalmente de la misma manera que se usaba en la época de Windows 95 y, cuando tiras la idea de tener una interfaz distinta, el <a href="https://en.wikipedia.org/wiki/Imprinting_(psychology)#Baby_duck_syndrome">baby duck syndrome</a> pega fuerte. Tan fuerte que Ubuntu–si bien usa GNOME–lo instala junto a varias extensiones que agregan una barra de tareas e iconos de escritorio para apelar a la mediocridad.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>“Desktop enviroment” o “entorno de escritorio” en castellano.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>“Desktop enviroment” o “entorno de escritorio” en castellano.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
-</section>
+</div>
 <br />
 <hr />
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>

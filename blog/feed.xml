@@ -6,6 +6,7 @@
     <author>
         <name>Ramiro Basile</name>
     </author>
+    
 
     <entry>
         <title>Como usar GNOME</title>
@@ -33,13 +34,59 @@
 <p class="caption">Manejando varios escritorios en GNOME</p>
 </div>
 <h2 id="no-instales-extensiones">No instales extensiones</h2>
-<p>Y asegurate de que tu distribución instale GNOME <em>vanilla</em> y no lleno de extensiones. En Ubuntu, por ejemplo, podes instalar <a href="https://packages.ubuntu.com/bionic/vanilla-gnome-desktop" title="Paquete vanilla-gone-desktop de Ubutnu">vanilla-gnome-desktop</a> para evitar usar la versión atrofiada de GNOME con la que viene Ubuntu por defecto.</p>
+<p>Y asegurate de que tu distribución instale GNOME <em>vanilla</em> y no lleno de extensiones. En Ubuntu, por ejemplo, podes instalar <a href="https://packages.ubuntu.com/bionic/vanilla-gnome-desktop">vanilla-gnome-desktop</a> para evitar usar la versión atrofiada de GNOME con la que viene Ubuntu por defecto.</p>
 <h2 id="no-me-digas-que-hacer-no-sos-mi-mamá">No me digas que hacer, no sos mi mamá</h2>
-<p>¿Para qué te digo todo esto? Porque GNOME no se maneja como Windows y muchos no lo entienden. Windows y la mayoría de otros <a href="https://en.wikipedia.org/wiki/Desktop_environment" title="Wikipedia de ambiente de escritorio">DE</a> usan una <a href="https://en.wikipedia.org/wiki/Desktop_metaphor" title="Wikipedia de metáfora de escritorio">metáfora tradicional de escritorio</a> que, en 2020 d.C., ya es un poco obsoleta–una reliquia de un tiempo donde no todo el mundo sabia usar una computadora y quizás una cierta abstracción a algo familiar, un escritorio, ayudara.</p>
+<p>¿Para qué te digo todo esto? Porque GNOME no se maneja como Windows y muchos no lo entienden. Windows y la mayoría de otros DE<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> usan una <a href="https://en.wikipedia.org/wiki/Desktop_metaphor">metáfora tradicional de escritorio</a> que, en 2020 d.C., ya es un poco obsoleta–una reliquia de un tiempo donde no todo el mundo sabia usar una computadora y quizás una cierta abstracción a algo familiar, un escritorio, ayudara.</p>
 <p>Si te manejas con varios escritorios y ventanas siempre visibles, de repente tener una barra de tareas que lista las ventanas abiertas se vuelve redundante. Y hasta podrías decir que se vuelve innecesario que ciertas aplicaciones se escondan en segundo plano; en Windows tener una ventana abierta innecesaria molesta y ocupa espacio–ya sea de escritorio o en la barra de tareas–pero en GNOME la podes tirar a otro escritorio y no tenes porque volver a verla.</p>
 <p>Si tu DE y tus programas tienen integrados en sus diseños una serie de atajos flexibles y útiles, ¿hace falta usar tanto en mouse? Y si no usas mucho el mouse, ¿hace falta que cada herramienta del programa, útil o no, este expuesta en la interfaz a menos de 2 clicks? ¿Hace falta que todos los botones sean minúsculos si no vamos a exponer muchos a la vez? ¿Porque no hacerlos un poquito más grandes y con más información, así de paso no solo son más accesibles, sino que, al no necesitar tanta precisión para clickearlos, se necesite usar el mouse aún menos.</p>
 <p>Con solo cambiar un poquito como usas una computadora, podes eliminar un montón de redundancia, un montón ruido visual, un montón de overhead de mantenimiento y podes simplificar el <em>workflow</em>–cosas que otros DE (y Windows), por más que te permitan manejarte con atajos y usar varios escritorios, no hacen, porque el <strong>cómo</strong> usas la computadora no esta integrado en su diseño.</p>
-<p>Así es como todo el mundo termina usando su computadora fundamentalmente de la misma manera que se usaba en la época de Windows 95 y, cuando tiras la idea de tener una interfaz distinta, el <a href="https://en.wikipedia.org/wiki/Imprinting_(psychology)#Baby_duck_syndrome" title="Wikipedia de baby duck syndrome">baby duck syndrome</a> pega fuerte. Tan fuerte que Ubuntu–si bien usa GNOME–lo instala junto a varias extensiones que agregan una barra de tareas e iconos de escritorio para apelar a la mediocridad.</p>
+<p>Así es como todo el mundo termina usando su computadora fundamentalmente de la misma manera que se usaba en la época de Windows 95 y, cuando tiras la idea de tener una interfaz distinta, el <a href="https://en.wikipedia.org/wiki/Imprinting_(psychology)#Baby_duck_syndrome">baby duck syndrome</a> pega fuerte. Tan fuerte que Ubuntu–si bien usa GNOME–lo instala junto a varias extensiones que agregan una barra de tareas e iconos de escritorio para apelar a la mediocridad.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn1"><p>“Desktop enviroment” o “entorno de escritorio” en castellano.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<br/>
+<hr/>
+<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+</body></content>
+    </entry>
+
+    <entry>
+        <title>Flatpak</title>
+        <link href="https://ramirobasile.github.io/website2/blog/flatpak.html" />
+        <updated>2020-11-27</updated>
+        <content type="html"><body>
+<p>🏠 <a href="../index.html">Volver al índice</a></p>
+<hr/>
+<div id="header">
+<h1 class="title">Flatpak</h1>
+<h2 class="author">Ramiro Basile</h2>
+<h3 class="date">2020-11-27</h3>
+</div>
+<p><em>Nota: Agarrá todo esto con pinza que yo no soy ningún experto en Linux, solo argentino.</em></p>
+<p>Me gusta la idea de Flatpak. Es bastante obvio que la distribución de software en el ecosistema infinitamente particionado de Linux es bastante horrenda, nadie va a defenderla demasiado. Todo recae en la idea de compartir todas las dependencias<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>: Una buena idea en principio, pero resulta tan complicado no tener conflictos entre paquetes que cada distribución tiene su repositorio organizado por un equipo de mantainers para evitarlo. Si no te suena loco es porque usaste Linux demasiado tiempo.</p>
+<p>El concepto de <a href="https://docs.flatpak.org/en/latest/basic-concepts.html#runtimes">runtimes</a> de Flatpak resulta bastante útil por varias razones que seguro ya conocen:</p>
+<ul>
+<li><p>Permite correr distintas versiones de un programa en paralelo</p></li>
+<li><p>Hace más útiles a los bug reports porque serían independientes de plataforma</p></li>
+<li><p>No ata a los desarrolladores a versiones específicas de dependencias</p></li>
+<li><p>Demanda menos coordinación entre personas (desarrolladores, proyectos, mantainers), cosa que es difícil de lograr en Linux</p></li>
+</ul>
+<p>Si, lo pagas con redundancia y programas más pesados, pero vale la pena por el precio del gigabyte hoy en día.</p>
+<p>Entonces Flatpak estaría en una posición bastante buena para simplificar la distribución de software en Linux, ¿no? Bueno, no sé. Flatpak no es solo un package manager, también hace <a href="https://docs.flatpak.org/en/latest/basic-concepts.html#sandbox">sandboxing</a>. Cada flatpak tiene que pedir permiso para interfacear con cualquier cosa fuera de su runtime, como el filesystem, por ejemplo. Tal y como las dependencias compartidas, suena lindo hasta que lo tienen que lo tienen que implementar los desarrolladores.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Capaz pedirles que sus programas vivan en un sandbox y cumplan especificaciones bastante complicadas resulta ser casi igual de optimista que esperar que manejen ellos solos la distribución de sus programas para cada package manager.</p>
+<p>Basta con que te bajes algunos flatpak no triviales para que des con algún drama con los permisos. Y la verdad es que yo como usuario no quiero estar teniendo que meter mano para arreglar todos los problemas que surgen del sandbox.</p>
+<p>¿Es tan importante esa seguridad extra si usamos programas libres?<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Se me hace que el sandboxing por defecto quizás sea una reacción un poco exagerada que, por lo menos a mí, me hace la experiencia de usar flatpaks bastante frustrante.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn1"><p><a href="https://blogs.gnome.org/mclasen/2018/09/07/on-flatpak-dependencies/" class="uri">https://blogs.gnome.org/mclasen/2018/09/07/on-flatpak-dependencies/</a>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Cuando distribuís un flatpak, especificás cuáles son los permisos que pide por defecto. El problema es que, en especial en software que no está pensado para distribuirse solamente como flatpak, los permisos muchas veces no abarcan todo lo que necesita la aplicación. Por ejemplo, Steam solo pide permiso para ciertos directorios que no incluyen a /mnt/, entonces si querés agregar juegos que están en un HDD aparte, ponele, tenés darle permiso explícito por terminal o usando Flatseal <a href="https://flathub.org/apps/details/com.github.tchx84.Flatseal" class="uri">https://flathub.org/apps/details/com.github.tchx84.Flatseal</a>. Esto es solamente molesto para mí, pero a un usuario que no sabe como funciona bien Flatpak o los permisos o su filesystem, le va a hacer pensar que es un problema de la aplicación o del sistema operativo.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>La mentalidad de desconfiar por defecto no está mal, pero yo creo que no deberíamos gastarnos tanto en hacer el software propietario más usable, sino que tendríamos que fomentar más el uso software libre del que no tendríamos porque desconfiar en un primer lugar.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<br/>
 <hr/>
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
@@ -69,6 +116,7 @@
 <p class="caption"> </p>
 </div>
 <p>También es visualmente hermosa y tiene una de las mejores bandas sonoras del universo. Mírenla.</p>
+<br/>
 <hr/>
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
@@ -105,6 +153,7 @@
 <h2 id="corto-acá">Corto acá</h2>
 <p>Honestamente estoy medio desentendido con Berserk. Me acuerdo que tenia quejas como para una tesis, pero, como ya no me acuerdo los detalles, tendria que sentarme a leer todo otra vez para hacer un buen análisis, y la verdad es que siento que no vale la pena. Capaz algún día, si vuelvo a leer Berserk, lo haga.</p>
 <p>Ah, y que conste que amo Berserk, no te lleves de todo esto que lo contrario. Parece que odio este manga por como lo critico, pero es solo porque me gusta tanto que le pongo tal nivel de intensidad. Me enoja lo excelente que podría haber sido a veces, pero sigue siendo para mí, el mejor manga de todos los tiempos.</p>
+<br/>
 <hr/>
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
@@ -131,35 +180,12 @@
 </ul>
 <h2 id="como-arreglar-y-desbloquear-el-bootloader">Como arreglar y desbloquear el bootloader</h2>
 <ul>
-<li>Bajate el fix y extraelo en algún lado</li>
-<li>Seguí todos los pasos de la <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">página de Motorola</a> hasta que te diga que ingreses la clave</li>
-<li>Ahora abri el READMEFIRST.rtf y, <strong>leyendolo con cuidado</strong>, hace lo que te diga</li>
-<li>Y una vez hecho eso ya podes ingresar la clave para desbloquear el bootloader y todo deberia andar perfecto</li>
+<li><p>Bajate el fix y extraelo en algún lado</p></li>
+<li><p>Seguí todos los pasos de la <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">página de Motorola</a> hasta que te diga que ingreses la clave</p></li>
+<li><p>Ahora abri el READMEFIRST.rtf y, <strong>leyendolo con cuidado</strong>, hace lo que te diga</p></li>
+<li><p>Y una vez hecho eso ya podes ingresar la clave para desbloquear el bootloader y todo deberia andar perfecto</p></li>
 </ul>
-<hr/>
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-    </entry>
-
-    <entry>
-        <title>Flatpak</title>
-        <link href="https://ramirobasile.github.io/website2/blog/flatpak.html" />
-        <updated>2020-11-22</updated>
-        <content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
-<hr/>
-<div id="header">
-<h1 class="title">Flatpak</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-11-22</h3>
-</div>
-<p><em>Nota: Agarrá todo esto con pinza que yo no soy ningún experto en Linux, solo argentino.</em></p>
-<p>Me gusta la idea de Flatpak. Es bastante obvio que la distribución de software en el ecosistema infinitamente particionado de Linux es bastante horrenda, nadie va a defenderla demasiado. Todo recae en la idea de compartir todas las librerías: Una buena idea en principio, pero tan tedioso a la hora de distribuir software que necesitas poner equipos intermediarios que manejen repositorios de paquetes para cada distribución. Esto no es ideal.</p>
-<p>Tener runtimes resulta bastante útil por varias razones que seguro ya conocen: Permite correr distintas versiones de un programa en paralelo; hace más útiles a los bug reports porque serían independientes de plataforma; no ata a los desarrolladores a versiones especificas de librerías según a que distribuciones apunten; etc. Si, lo pagas con redundancia y programas más pesados, pero vale la pena hoy en día. Es una solución bastante más practica que no requiere coordinación entre distintas personas, cosa que <em>a veces</em> puede ser difícil en el mundo de Linux.</p>
-<p>Y Flatpak, con una implementación de runtimes bastante robusta, el apoyo de varias de las distribuciones más usadas y <a href="https://forum.snapcraft.io/t/is-the-snapcraft-io-back-end-server-open-source/9202">sin Canonical involucrado</a>, lo que solamente puede ser bueno, estaría en una posición bastante buena para simplificar la distribución de software en Linux, ¿no?</p>
-<p>Bueno, no se. Flatpak no es solo un package manager, también hace <a href="https://docs.flatpak.org/en/latest/sandbox-permissions.html">sandboxing</a>. Cada flatpak tiene que pedir permiso para interfacear con cualquier cosa fuera de su runtime, como el filesystem, por ejemplo. Tal y como las librerías compartidas, suena lindo hasta que lo tienen que lo tienen que implementar los desarrolladores. Se ve que pedirles que sus programas vivan en un sandbox y cumplan especificaciones bastante complicadas resulta ser casi igual de optimista que esperar que manejen ellos solos la distribución de sus programas para cada package manager.</p>
-<p>Basta con que te bajes algunos flatpak no triviales para que des con algún drama con los permisos. Y perdoname, pero si la implementación del sandboxing se mete en el medio, entonces no la quiero. Hasta ahora no tuvimos demasiados problemas sin sandboxing, y siempre y cuando mantengamos nuestro código libre imagino que no vamos a tener muchos más.</p>
-<p>Si no fuera por el sandboxing, me parece que Flatpak se volvería un estándar bastante rápido. Pero como están las cosas, distribuir tu programa como flatpak es aún más molesto que distribuir a cualquier otro package manager, y me parece una lástima la verdad.</p>
+<br/>
 <hr/>
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
