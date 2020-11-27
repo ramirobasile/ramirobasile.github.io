@@ -1,7 +1,7 @@
 body {
     padding: 1em;
     margin: auto;
-    max-width: 60ch;
+    max-width: 65ch;
     line-height: 1.5;
 }
 
@@ -21,4 +21,10 @@ p.caption,
 figcaption {
     font-style: italic;
     font-size: smaller;
+
+}
+
+section.footnotes hr {
+    width: 50%;
+    margin: 0;
 }
