@@ -29,6 +29,7 @@ section.footnotes {
     font-size: smaller;
 }
 
+div.footnotes hr,
 section.footnotes hr {
     width: 33%;
     margin: 0;
