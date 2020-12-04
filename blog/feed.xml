@@ -8,117 +8,11 @@
     </author>
     
 
-    <entry>
-        <title>Flatpak</title>
-        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/flatpak.html" />
-        <updated>2020-11-27</updated>
-        <content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
-<hr/>
-<div id="header">
-<h1 class="title">Flatpak</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-11-27</h3>
-</div>
-<p><em>Nota: Agarrá todo esto con pinza que yo no soy ningún experto en Linux, solo argentino.</em></p>
-<p>Me gusta la idea de Flatpak. Es bastante obvio que la distribución de software en el ecosistema infinitamente particionado de Linux es bastante horrenda, nadie va a defenderla demasiado. Todo recae en la idea de compartir todas las dependencias<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>: Una buena idea en principio, pero resulta tan complicado no tener conflictos entre paquetes que cada distribución tiene su repositorio organizado por un equipo de mantainers para evitarlo. Si no te suena loco es porque usaste Linux demasiado tiempo.</p>
-<p>El concepto de <a href="https://docs.flatpak.org/en/latest/basic-concepts.html#runtimes">runtimes</a> de Flatpak resulta bastante útil por varias razones que seguro ya conocen:</p>
-<ul>
-<li><p>Permite correr distintas versiones de un programa en paralelo</p></li>
-<li><p>Hace más útiles a los bug reports porque serían independientes de plataforma</p></li>
-<li><p>No ata a los desarrolladores a versiones específicas de dependencias</p></li>
-<li><p>Demanda menos coordinación entre personas (desarrolladores, proyectos, mantainers), cosa que es difícil de lograr en Linux</p></li>
-</ul>
-<p>Si, lo pagas con redundancia y programas más pesados, pero vale la pena por el precio del gigabyte hoy en día.</p>
-<p>Entonces Flatpak estaría en una posición bastante buena para simplificar la distribución de software en Linux, ¿no? Bueno, no sé. Flatpak no es solo un package manager, también hace <a href="https://docs.flatpak.org/en/latest/basic-concepts.html#sandboxes">sandboxing</a>. Cada flatpak tiene que pedir permiso para interfacear con cualquier cosa fuera de su runtime, como el filesystem, por ejemplo. Tal y como las dependencias compartidas, suena lindo hasta que lo tienen que lo tienen que implementar los desarrolladores.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Capaz pedirles que sus programas vivan en un sandbox y cumplan especificaciones bastante complicadas resulta ser casi igual de optimista que esperar que manejen ellos solos la distribución de sus programas para cada package manager.</p>
-<p>Basta con que te bajes algunos flatpak no triviales para que des con algún drama con los permisos. Y la verdad es que yo como usuario no quiero estar teniendo que meter mano para arreglar todos los problemas que surgen del sandbox.</p>
-<p>¿Es tan importante esa seguridad extra si usamos programas libres?<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Se me hace que el sandboxing por defecto quizás sea una reacción un poco exagerada que, por lo menos a mí, me hace la experiencia de usar flatpaks bastante frustrante.</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn1"><p><a href="https://blogs.gnome.org/mclasen/2018/09/07/on-flatpak-dependencies/" class="uri">https://blogs.gnome.org/mclasen/2018/09/07/on-flatpak-dependencies/</a>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>Cuando distribuís un flatpak, especificás cuáles son los permisos que pide por defecto. El problema es que, en especial en software que no está pensado para distribuirse solamente como flatpak, los permisos muchas veces no abarcan todo lo que necesita la aplicación. Por ejemplo, Steam solo pide permiso para ciertos directorios que no incluyen a /mnt/, entonces si querés agregar juegos que están en un HDD aparte, ponele, tenés darle permiso explícito por terminal o usando Flatseal <a href="https://flathub.org/apps/details/com.github.tchx84.Flatseal" class="uri">https://flathub.org/apps/details/com.github.tchx84.Flatseal</a>. Esto es solamente molesto para mí, pero a un usuario que no sabe como funciona bien Flatpak o los permisos o su filesystem, le va a hacer pensar que es un problema de la aplicación o del sistema operativo.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>La mentalidad de desconfiar por defecto no está mal, pero yo creo que no deberíamos gastarnos tanto en hacer el software propietario más usable, sino fomentar más el uso software libre del que no tendríamos porque desconfiar en un primer lugar.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
-</ol>
-</div>
-<br/>
-<hr/>
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-    </entry>
-
-    <entry>
-        <title>No es de Ghibli I: Royal Space Force</title>
-        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/royal-space-force.html" />
-        <updated>2020-10-14</updated>
-        <content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
-<hr/>
-<div id="header">
-<h1 class="title">No es de Ghibli I: Royal Space Force</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-10-14</h3>
-</div>
-<p>Royal Space Force es una película que nunca veo recomendada y es una lástima porque es muy linda.</p>
-<div class="figure">
-<img src="resources/lahdatt.gif" title="GIF animado de una escena cortita, melancólica, de Royal Space Force con el protagonista tomando un trago solo en un balcón de noche" alt=""/>
-<p class="caption"> </p>
-</div>
-<p>El mundo ficticio de la película te da la impresión de que va a tomarse un rato mostrándote las diferencias que tiene con el mundo real para establecerse, y que te vas a poder imaginarte en cada escena a los diseñadores auto-felicitándose como unos salames por su ingenioso <em>worldbuilding</em>. Pero en un acto de moderación que banco mucho, cada peculiaridad cultural, tecnológica o histórica, por más interesante, te la muestran en segundo plano. Ningún personaje explica nada del mundo en el que vive y los contrastes quedan como detalles de fondo–constantes y ninguno menos imaginativo que el anterior–pero nunca llamando mucho la atención o suspendiendo la narrativa.</p>
-<p>Esto hace la película fantástica para mi, logra que se sienta muy verosímil el mundo y le deja a la trama moverse a un paso relajado hacia una culminación emocionalmente impactante muy merecida.</p>
-<div class="figure">
-<img src="resources/rsp-street.gif" title="GIF animado de una calle en Royal Space Force" alt=""/>
-<p class="caption"> </p>
-</div>
-<p>También es visualmente hermosa y tiene una de las mejores bandas sonoras del universo. Mírenla.</p>
-<br/>
-<hr/>
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-    </entry>
-
-    <entry>
-        <title>Berserk se terminó en Conviction</title>
-        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/berserk.html" />
-        <updated>2020-06-02</updated>
-        <content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
-<hr/>
-<div id="header">
-<h1 class="title">Berserk se terminó en Conviction</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-06-02</h3>
-</div>
-<p>Hace mucho no leo Berserk. El Falcon of the Millenium arc me dejo un mal gusto en la boca y nunca me dieron ganas de volver a leerlo. Terminé de leer el 355, que era hasta donde estaba publicado en su momento, y me desentendí por completo.</p>
-<div class="figure">
-<img src="resources/seahorse.jpg" title="Panél del manga que muestra al barco Seahorse" alt=""/>
-<p class="caption">No hay nada más desalentador que dar vuelta la primera página del próximo capítulo y volver a ver esto</p>
-</div>
-<p>Después de Conviction (y durante una buena parte de Conviction también, supongo), Guts viaja a todos lados con un equipo de personajes prácticamente arrancados de un jRPG genérico. Es más, la trama pasa a tener la misma calidad que la de un jRPG: todos consiguen sus armas especiales y sus hechizos y empiezan todos a figurar en cada pelea.</p>
-<p>El tono del manga hace un 180° que solamente se lo puedo atribuir a que capaz Idolmaster le termino de pudrir el cerebro a Miura.</p>
-<p>Hay miles de formas más en armonía con el tono de Berserk para hacerlo progresar como personaje a Guts que no incluyen relegarlo a personaje secundario en su propia historia y arruinar la atmósfera del manga, con panel tras panel de interacciones entre personajes superficiales e inconsecuentes.</p>
-<h2 id="personajes">Personajes</h2>
-<p>Isidro, al menos al principio, parecía un bardo al Shounen. Es prácticamente uno de esos protagonistas <em>self-insert</em> para nenes. A mi no me pareció muy gracioso ni si quiera la primera vez, pero ya para la tercera o cuarta vez que Miura encontró una excusa para hacerlo figurar a Isidro ya me tenia las bolas por el piso. Ya esta Puck para ser el payaso del manga (que seamos honestos, ya estaba un poquito pasadito de rosca aun antes de terminar Conviction), este personaje no cumple ninguna función.</p>
-<p>Y después está Schierke, que logra ser aún más detestable que Isidrio; porque al menos él–por más que este en cada panel–tiene la decencia de mantenerse tan superficial como merece ser: un comic-relief. Pero a ella le arman toda esta conexión con Guts, que es tan falsa y forzada que no me creo ni por un segundo. No es convincente que Schierke entienda a Guts ni es convincente que le de paz mental.</p>
-<p>Pero la peor cagada Miura se la manda con Schierke. Ella explica cada cosa que pasa constantemente, lo que arruina totalmente la mística del mundo del manga. En Berserk siempre sentís que Guts está peleando contra un mal cósmico, incompresible, y no sabes si es por la voluntad de ese mal que a Guts se le permite seguir perseverando o es que Guts genuinamente se lo merece. Pero las explicaciones de magia cósmica de 4 páginas te arruinan la atmósfera–que son las mismas explicaciones que sirven de excusa para el galerazo que es la conexión “profunda” que tiene Schierke con Guts.</p>
-<div class="figure">
-<img src="resources/eclipse.jpg" title="Panél del manga del eclípse" alt=""/>
-<p class="caption"> </p>
-</div>
-<h2 id="corto-acá">Corto acá</h2>
-<p>Honestamente estoy medio desentendido con Berserk. Me acuerdo que tenia quejas como para una tesis, pero, como ya no me acuerdo los detalles, tendria que sentarme a leer todo otra vez para hacer un buen análisis, y la verdad es que siento que no vale la pena. Capaz algún día, si vuelvo a leer Berserk, lo haga.</p>
-<p>Ah, y que conste que amo Berserk, no te lleves de todo esto que lo contrario. Parece que odio este manga por como lo critico, pero es solo porque me gusta tanto que le pongo tal nivel de intensidad. Me enoja lo excelente que podría haber sido a veces, pero sigue siendo para mí, el mejor manga de todos los tiempos.</p>
-<br/>
-<hr/>
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-    </entry>
-
-    <entry>
-        <title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
-        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/moto-g-bootloader.html" />
-        <updated>2020-06-02</updated>
-        <content type="html"><body>
+	<entry>
+		<title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
+		<link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/moto-g-bootloader.html" />
+		<updated>2020-06-02</updated>
+		<content type="html"><body>
 <p>🏠 <a href="../index.html">Volver al índice</a></p>
 <hr/>
 <div id="header">
@@ -144,5 +38,5 @@
 <hr/>
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
-    </entry>
+	</entry>
 </feed>
