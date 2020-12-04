@@ -9,53 +9,8 @@
     
 
     <entry>
-        <title>Como usar GNOME</title>
-        <link href="https://ramirobasile.github.io/website2/blog/gnome.html" />
-        <updated>2020-10-04</updated>
-        <content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
-<hr/>
-<div id="header">
-<h1 class="title">Como usar GNOME</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-10-04</h3>
-</div>
-<h2 id="usá-el-teclado">Usá el teclado</h2>
-<p>GNOME y todos sus programas están llenos de atajos–y no por mera accesibilidad–están para agilizar las cosas. Cada aplicación de GNOME tiene una lista de atajos y los de GNOME en sí están listados en los ajustes, así que son bastante fáciles de descubrir.</p>
-<p>En GNOME tampoco usas menú de inicio sino que apretas Super (Windows) y busca la aplicación por nombre, lo que también te da acceso a los <a href="https://developer.gnome.org/SearchProvider/">search providers</a> de GNOME.</p>
-<div class="figure">
-<img src="resources/search.gif" title="GIF animado demostrando la función de busqueda de GNOME" alt=""/>
-<p class="caption">Búsqueda de aplicaciones, archivos, emojis y expresiones de calculadora en GNOME</p>
-</div>
-<h2 id="repartí-tus-ventanas-en-escritorios">Repartí tus ventanas en escritorios</h2>
-<p>Cada escritorio tiene que vagamente representar una actividad: un escritorio para tus ejercicios y libros de álgebra, otro para tu navegador, otro para tu editor de texto y terminales, etc.</p>
-<div class="figure">
-<img src="resources/workspaces.gif" title="GIF animado mostrando varios cambios de escritorios en GNOME" alt=""/>
-<p class="caption">Manejando varios escritorios en GNOME</p>
-</div>
-<h2 id="no-instales-extensiones">No instales extensiones</h2>
-<p>Y asegurate de que tu distribución instale GNOME <em>vanilla</em> y no lleno de extensiones. En Ubuntu, por ejemplo, podes instalar <a href="https://packages.ubuntu.com/bionic/vanilla-gnome-desktop">vanilla-gnome-desktop</a> para evitar usar la versión atrofiada de GNOME con la que viene Ubuntu por defecto.</p>
-<h2 id="no-me-digas-que-hacer-no-sos-mi-mamá">No me digas que hacer, no sos mi mamá</h2>
-<p>¿Para qué te digo todo esto? Porque GNOME no se maneja como Windows y muchos no lo entienden. Windows y la mayoría de otros DE<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> usan una <a href="https://en.wikipedia.org/wiki/Desktop_metaphor">metáfora tradicional de escritorio</a> que, en 2020 d.C., ya es un poco obsoleta–una reliquia de un tiempo donde no todo el mundo sabia usar una computadora y quizás una cierta abstracción a algo familiar, un escritorio, ayudara.</p>
-<p>Si te manejas con varios escritorios y ventanas siempre visibles, de repente tener una barra de tareas que lista las ventanas abiertas se vuelve redundante. Y hasta podrías decir que se vuelve innecesario que ciertas aplicaciones se escondan en segundo plano; en Windows tener una ventana abierta innecesaria molesta y ocupa espacio–ya sea de escritorio o en la barra de tareas–pero en GNOME la podes tirar a otro escritorio y no tenes porque volver a verla.</p>
-<p>Si tu DE y tus programas tienen integrados en sus diseños una serie de atajos flexibles y útiles, ¿hace falta usar tanto en mouse? Y si no usas mucho el mouse, ¿hace falta que cada herramienta del programa, útil o no, este expuesta en la interfaz a menos de 2 clicks? ¿Hace falta que todos los botones sean minúsculos si no vamos a exponer muchos a la vez? ¿Porque no hacerlos un poquito más grandes y con más información, así de paso no solo son más accesibles, sino que, al no necesitar tanta precisión para clickearlos, se necesite usar el mouse aún menos.</p>
-<p>Con solo cambiar un poquito como usas una computadora, podes eliminar un montón de redundancia, un montón ruido visual, un montón de overhead de mantenimiento y podes simplificar el <em>workflow</em>–cosas que otros DE (y Windows), por más que te permitan manejarte con atajos y usar varios escritorios, no hacen, porque el <strong>cómo</strong> usas la computadora no esta integrado en su diseño.</p>
-<p>Así es como todo el mundo termina usando su computadora fundamentalmente de la misma manera que se usaba en la época de Windows 95 y, cuando tiras la idea de tener una interfaz distinta, el <a href="https://en.wikipedia.org/wiki/Imprinting_(psychology)#Baby_duck_syndrome">baby duck syndrome</a> pega fuerte. Tan fuerte que Ubuntu–si bien usa GNOME–lo instala junto a varias extensiones que agregan una barra de tareas e iconos de escritorio para apelar a la mediocridad.</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn1"><p>“Desktop enviroment” o “entorno de escritorio” en castellano.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-</ol>
-</div>
-<br/>
-<hr/>
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-    </entry>
-
-    <entry>
         <title>Flatpak</title>
-        <link href="https://ramirobasile.github.io/website2/blog/flatpak.html" />
+        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/flatpak.html" />
         <updated>2020-11-27</updated>
         <content type="html"><body>
 <p>🏠 <a href="../index.html">Volver al índice</a></p>
@@ -94,7 +49,7 @@
 
     <entry>
         <title>No es de Ghibli I: Royal Space Force</title>
-        <link href="https://ramirobasile.github.io/website2/blog/royal-space-force.html" />
+        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/royal-space-force.html" />
         <updated>2020-10-14</updated>
         <content type="html"><body>
 <p>🏠 <a href="../index.html">Volver al índice</a></p>
@@ -124,7 +79,7 @@
 
     <entry>
         <title>Berserk se terminó en Conviction</title>
-        <link href="https://ramirobasile.github.io/website2/blog/berserk.html" />
+        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/berserk.html" />
         <updated>2020-06-02</updated>
         <content type="html"><body>
 <p>🏠 <a href="../index.html">Volver al índice</a></p>
@@ -161,7 +116,7 @@
 
     <entry>
         <title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
-        <link href="https://ramirobasile.github.io/website2/blog/moto-g-bootloader.html" />
+        <link href="https://ramirobasile.github.io/website2//home/ramiro/Projects/website2/blog/moto-g-bootloader.html" />
         <updated>2020-06-02</updated>
         <content type="html"><body>
 <p>🏠 <a href="../index.html">Volver al índice</a></p>
