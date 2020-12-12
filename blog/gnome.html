@@ -1,18 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-
-    <title>Blog de Ramiro Basile</title>
-    <link href="https://ramirobasile.github.io/website2/index.html"/>
-    <author>
-        <name>Ramiro Basile</name>
-    </author>
-
-	<entry>
-		<title>Si pensás probar GNOME, leé el primer párrafo de esta entrada</title>
-		<link href="https://ramirobasile.github.io/website2/gnome.html" />
-		<updated>2020-12-12</updated>
-		<content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Ramiro Basile" />
+  <meta name="date" content="2020-12-12" />
+  <title>Si pensás probar GNOME, leé el primer párrafo de esta entrada</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="/home/ramiro/Projects/website2/blog/resources/style.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<p>&#x1F3E0; <a href="../index.html">Volver al índice</a></p>
 <div id="header">
 <h1 class="title">Si pensás probar GNOME, leé el primer párrafo de esta entrada</h1>
 <h2 class="author">Ramiro Basile</h2>
@@ -24,7 +31,7 @@
 <h2 id="repartí-tus-ventanas-en-escritorios">Repartí tus ventanas en escritorios</h2>
 <p>El concepto clave de GNOME es usar escritorios—uno para tu navegador, otro para tus PDF de álgebra y calculadora, otro para tus terminales y editor de texto, etc. La idea es que vayas haciendo y deshaciendo escritorios en los que pones aplicaciones más o menos relacionadas. Así vas a tener todas tus ventanas siempre a la vista y compartimentalizadas para acceso rápido.</p>
 <div class="figure">
-<img src="resources/workspaces.gif" title="GIF demostrando los escritorios de GNOME" alt=""/>
+<img src="resources/workspaces.gif" title="GIF demostrando los escritorios de GNOME" alt="" />
 <p class="caption"> </p>
 </div>
 <p>A medida que te vas acostumbrando a usar los escritorios, capaz te vayas dando cuenta que minimizar o esconder ventanas en el tray, o tener una barra de tareas donde figuren todas, eran cosas no tan indispensables. Puede ser que te empiece a ser más cómodo moverte a otro escritorio cuando te quedas sin lugar, en vez de pasártela escondiendo o toqueteando los tamaños y posiciones de las ventanas para hacer lugar en la pantalla—en especial si te avivás que tener iconos en el escritorio cumple poco más que abrir el explorador de archivos y listo, lo que te saca otra razón para estar toqueteando ventanas, al no necesitar hacer espacio para ver el escritorio porque hay nada ahí.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
@@ -42,52 +49,18 @@
 <p>Me parece que no es tan difícil de adaptarse al paradigma de GNOME, es un tema no encapricharse con haga lo que hace Windows e ir reconociendo las ideas del diseño que se hacen bastante intuitivas a medida que usas el DE.</p>
 <p>Para mi vale la pena GNOME, y ojala vos también le encuentres utilidad. Suerte!</p>
 <div class="footnotes">
-<hr/>
+<hr />
 <ol>
 <li id="fn1"><p>Estas redundancias pueden terminar siendo bastante confusas, en especial para gente menos culta con las computadoras. ¿Alguna vez viste a mi suegra usar su máquina? Ella no entiende que el escritorio es vista alternativa de la carpeta en <code>C:/Users/Suegra/Desktop/</code>, se manda mails a sí misma con sus archivos importantes para no perderlos en quilombo de accesos directos redundantes que es Windows. Ni hablar de que se imagine por qué carajo cerrar una aplicación en realidad no la cierra, sino que la esconde atrás de una flechita chiquita en la barra de tareas.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p>Si bien excelentes la mayoría, hay algunos que cambiaría: como intercambiar <code>Alt+Tab</code> con <code>Alt+Esc</code>, siendo <code>Alt+Tab</code> más fácil de apretar y la función por defecto de <code>Alt+Esc</code> más útil; y también asignarle <code>Super+1</code>, <code>Super+2</code>, <code>Super+3</code>… a los atajos numerados de cambiar de escritorio, para poder moverte con una sola mano. Estos últimos normalmente no los podes asignar porque te los pisan unos atajos ocultos de GNOME, pero los podes forzar así:</p>
-<pre><code>$ for i in {1..9}; do KEY=\'"&lt;Super&gt;$i"\' &amp;&amp; gsettings set "org.gnome.desktop.wm.keybindings" "switch-to-workspace-$i" "[$KEY]"; done</code></pre>
+<pre><code>$ for i in {1..9}; do KEY=\&#39;&quot;&lt;Super&gt;$i&quot;\&#39; &amp;&amp; gsettings set &quot;org.gnome.desktop.wm.keybindings&quot; &quot;switch-to-workspace-$i&quot; &quot;[$KEY]&quot;; done</code></pre>
 <a href="#fnref2" class="footnote-back">↩︎</a></li>
 </ol>
 </div>
-<br/>
+<br />
 
-<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
-
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-	</entry>
-
-	<entry>
-		<title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
-		<link href="https://ramirobasile.github.io/website2/moto-g-bootloader.html" />
-		<updated>2020-06-02</updated>
-		<content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
-<div id="header">
-<h1 class="title">Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</h1>
-<h2 class="author">Ramiro Basile</h2>
-<h3 class="date">2020-06-02</h3>
-</div>
-<p>Si por alguna razón estabas buscando rootear o flashearle otro ROM a tu Moto G1, hay una chance de que no logres desbloquear el bootloader.</p>
-<p>A mi me paso con un XT1032, y según entiendo cualquier Moto G1 con Android 4.4.4 tiene este problema gracias a un bug. El problema que tenía yo era que, una vez que ingresaba la clave que te manda por mail Motorola para desbloquear el bootloader, me tiraba “Password incorrect” o algo parecido. <strong>Esto es un bug</strong>, probablemente no es que copiaste mal la clave.</p>
-<p>Motorola sacó un fix, hace tiempo, pero fue un dolor de huevos encontrarlo porque el hilo original del foro de Motorola ya no existe y de culo lo encontre en otro <a href="https://forum.xda-developers.com/moto-g/general/solved-moto-g-unlock-bootloader-t3114322">hilo de XDA</a>; asi que lo dejo acá para la posteridad:</p>
-<ul>
-<li><p><a href="magnet:?xt=urn:btih:22827885746470081f5011dcbecae6af6473908a&amp;dn=G%5F4.4.4.BL%5FFix.zip">Magnet link</a> (1,98 MB)</p></li>
-<li><p><a href="https://drive.google.com/file/d/1VCc70WFL8LJ2rDHUWibYatKRjrGi_Elp/view?usp=sharing">Google Drive</a> (1,98 MB)</p></li>
-</ul>
-<h2 id="como-arreglar-y-desbloquear-el-bootloader">Como arreglar y desbloquear el bootloader</h2>
-<ul>
-<li><p>Bajate el fix y extraelo en algún lado</p></li>
-<li><p>Seguí todos los pasos de la <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">página de Motorola</a> hasta que te diga que ingreses la clave</p></li>
-<li><p>Ahora abri el READMEFIRST.rtf y, <strong>leyendolo con cuidado</strong>, hace lo que te diga</p></li>
-<li><p>Y una vez hecho eso ya podes ingresar la clave para desbloquear el bootloader y todo deberia andar perfecto</p></li>
-</ul>
-<br/>
-
-<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
+<p><small>Cualquier duda o comentario mandamelo a <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#114;&#x61;&#x6d;&#x69;&#114;&#x6f;&#98;&#x61;&#x73;&#x69;&#108;&#x65;&#x31;&#64;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;" class="email">&#114;&#x61;&#x6d;&#x69;&#114;&#x6f;&#98;&#x61;&#x73;&#x69;&#108;&#x65;&#x31;&#64;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;</a>.</small></p>
 
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-	</entry>
-</feed>
+</body>
+</html>
