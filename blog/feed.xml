@@ -9,7 +9,7 @@
 
 	<entry>
 		<title>Si pensás probar GNOME, leé el primer párrafo de esta entrada</title>
-		<link href="https://ramirobasile.github.io/website2/gnome.html" />
+		<link href="https://ramirobasile.github.io/website2/blog/gnome.html" />
 		<updated>2020-12-12</updated>
 		<content type="html"><body>
 <p>🏠 <a href="../index.html">Volver al índice</a></p>
@@ -18,7 +18,7 @@
 <h2 class="author">Ramiro Basile</h2>
 <h3 class="date">2020-12-12</h3>
 </div>
-<p><em>Nota: En esta entrada voy a hablar de GNOME sin extensiones. Varias distribuciones, como Ubuntu por ejemplo, distribuyen GNOME con un varias extensiones. Fijate que la tuya no haga lo mismo si vas a probar GNOME.</em></p>
+<p><em>Nota: En esta entrada voy a hablar de GNOME sin extensiones. Varias distribuciones, como Ubuntu por ejemplo, distribuyen GNOME con varias extensiones. Fijate que la tuya no haga lo mismo si vas a probar GNOME.</em></p>
 <p>GNOME no usa la metáfora tradicional de escritorio que viene usando Windows desde el ’95, tiene una filosofía distinta. Si no estas dispuesto a cambiar un poco como usas tu máquina, entonces yo no te recomendaría GNOME—tal y como tampoco te recomendaría usar vim o Emacs si no estas dispuesto a re-aprenderte varios atajos.</p>
 <p>Pero, si decidís darle una chance a GNOME, te puedo ayudar explicándote un par de las ideas básicas del workflow, para que puedas agarrarle la mano más rápido y, eventualmente, capaz le puedas encontrar mérito a sus ideas.</p>
 <h2 id="repartí-tus-ventanas-en-escritorios">Repartí tus ventanas en escritorios</h2>
@@ -44,7 +44,7 @@
 <div class="footnotes">
 <hr/>
 <ol>
-<li id="fn1"><p>Estas redundancias pueden terminar siendo bastante confusas, en especial para gente menos culta con las computadoras. ¿Alguna vez viste a mi suegra usar su máquina? Ella no entiende que el escritorio es vista alternativa de la carpeta en <code>C:/Users/Suegra/Desktop/</code>, se manda mails a sí misma con sus archivos importantes para no perderlos en quilombo de accesos directos redundantes que es Windows. Ni hablar de que se imagine por qué carajo cerrar una aplicación en realidad no la cierra, sino que la esconde atrás de una flechita chiquita en la barra de tareas.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>Estas redundancias pueden terminar siendo bastante confusas, en especial para gente menos culta con las computadoras. ¿Alguna vez viste a la mamá de mi novia usar su máquina? Ella no entiende que el escritorio es vista alternativa de la carpeta en <code>C:/Users/Suegra/Desktop/</code>, se manda mails a sí misma con sus archivos importantes para no perderlos en quilombo de accesos directos redundantes que es Windows. Ni hablar de que se imagine por qué carajo cerrar una aplicación en realidad no la cierra, sino que la esconde atrás de una flechita chiquita en la barra de tareas.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p>Si bien excelentes la mayoría, hay algunos que cambiaría: como intercambiar <code>Alt+Tab</code> con <code>Alt+Esc</code>, siendo <code>Alt+Tab</code> más fácil de apretar y la función por defecto de <code>Alt+Esc</code> más útil; y también asignarle <code>Super+1</code>, <code>Super+2</code>, <code>Super+3</code>… a los atajos numerados de cambiar de escritorio, para poder moverte con una sola mano. Estos últimos normalmente no los podes asignar porque te los pisan unos atajos ocultos de GNOME, pero los podes forzar así:</p>
 <pre><code>$ for i in {1..9}; do KEY=\'"&lt;Super&gt;$i"\' &amp;&amp; gsettings set "org.gnome.desktop.wm.keybindings" "switch-to-workspace-$i" "[$KEY]"; done</code></pre>
 <a href="#fnref2" class="footnote-back">↩︎</a></li>
@@ -60,7 +60,7 @@
 
 	<entry>
 		<title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
-		<link href="https://ramirobasile.github.io/website2/moto-g-bootloader.html" />
+		<link href="https://ramirobasile.github.io/website2/blog/moto-g-bootloader.html" />
 		<updated>2020-06-02</updated>
 		<content type="html"><body>
 <p>🏠 <a href="../index.html">Volver al índice</a></p>
