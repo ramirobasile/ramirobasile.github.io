@@ -1,6 +1,36 @@
 body {
-	padding: 1em;
-	margin: auto;
-	max-width: 65ch;
-	line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 65ch;
+    line-height: 1.5;
+}
+
+div.figure,
+figure {
+    margin: auto;
+    text-align: center;
+}
+
+div.figure img,
+figure img {
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+p.caption,
+figcaption {
+    font-style: italic;
+    font-size: smaller;
+
+}
+
+div.footnotes,
+section.footnotes {
+    font-size: smaller;
+}
+
+div.footnotes hr,
+section.footnotes hr {
+    width: 33%;
+    margin: 0;
 }
