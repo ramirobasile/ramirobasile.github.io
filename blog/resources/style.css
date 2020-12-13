@@ -34,3 +34,9 @@ section.footnotes hr {
     width: 33%;
     margin: 0;
 }
+
+@media print {
+	.home {
+		display: none;
+	}
+}
