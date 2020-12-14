@@ -16,6 +16,8 @@ done
 
 shift $(( OPTIND-1 ))
 
+# TODO arreglar for
+# TODO comentarios
 for FILE in $(find $@ -maxdepth 1 -type f -name "*.md" -exec realpath {} \;); do
 	ROOT=$(realpath --relative-to=$(dirname "$FILE") .)
 	OUT=$(dirname "$FILE")/$(basename "$FILE" '.md').html
@@ -23,11 +25,6 @@ for FILE in $(find $@ -maxdepth 1 -type f -name "*.md" -exec realpath {} \;); do
 	cd $(dirname "$FILE")
 	
 	ARGS=()
-	if [ -f "./resources/style.css" ]; then
-		ARGS+=( "--css" "./resources/style.css" )
-	elif [ -f "$ROOT/resources/style.css" ]; then
-		ARGS+=( "--css" "$ROOT/resources/style.css" )
-	fi
 	if [ -f "./resources/head.html" ]; then
 		ARGS+=( "-H" "./resources/head.html" )
 	elif [ -f "$ROOT/resources/head.html" ]; then
