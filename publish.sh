@@ -4,49 +4,54 @@ IFS=$'\n\t'
 
 VERBOSE=0
 
-while getopts "vrh" OPT; do
+while getopts "hv" OPT; do
 	case "$OPT" in
 		v) VERBOSE=1;;
-		#r) DOCS=$(find -type f -name "*.md");;
 		h) 	echo 'Usage:'
-			echo '	publish.sh [-v] [-h] [-r] <file | directory> <file | directory>...'
+			echo '	publish.sh [-h] [-v] <file | directory> <file | directory>...'
 			exit 0
 			;;
 	esac
 done
 
-shift $(( OPTIND - 1 ))
+shift $(( OPTIND-1 ))
 
 for FILE in $(find $@ -maxdepth 1 -type f -name "*.md" -exec realpath {} \;); do
+	ROOT=$(realpath --relative-to=$(dirname "$FILE") .)
 	OUT=$(dirname "$FILE")/$(basename "$FILE" '.md').html
-	RESOURCES=$(dirname "$FILE")/
-	CSS=./resources/style.css
-	HEAD=./resources/head.html
-	HEADER=./resources/header.html
-	FOOTER=./resources/footer.html
 	
-	if [ $VERBOSE == 1 ]; then
-		echo FILE: "$FILE" 
-		echo OUT: "$OUT"
-		echo CSS: "$CSS"
-		echo Resources folder: "$RESOURCES"
-		echo Head: "$HEAD"
-		echo Header: "$HEADER"
-		echo Footer: "$FOOTER"
-		echo
+	cd $(dirname "$FILE")
+	
+	ARGS=()
+	if [ -f "./resources/style.css" ]; then
+		ARGS+=( "--css" "./resources/style.css" )
+	elif [ -f "$ROOT/resources/style.css" ]; then
+		ARGS+=( "--css" "$ROOT/resources/style.css" )
+	fi
+	if [ -f "./resources/head.html" ]; then
+		ARGS+=( "-H" "./resources/head.html" )
+	elif [ -f "$ROOT/resources/head.html" ]; then
+		ARGS+=( "-H" "$ROOT/resources/head.html" )
+	fi
+	if [ -f "./resources/header.html" ]; then
+		ARGS+=( "--include-before-body" "./resources/header.html" )
+	elif [ -f "$ROOT/resources/header.html" ]; then
+		ARGS+=( "--include-before-body" "$ROOT/resources/header.html" )
+	fi
+	if [ -f "./resources/footer.html" ]; then
+		ARGS+=( "--include-after-body" "./resources/footer.html" )
+	elif [ -f "$ROOT/resources/footer.html" ]; then
+		ARGS+=( "--include-after-body" "$ROOT/resources/footer.html" )
 	fi
 	
 	pandoc $FILE \
 		--to html4 \
 		--email-obfuscation=references \
-		--css $CSS \
-		--resource-path $RESOURCES \
-		-H $HEAD \
-		--include-before-body $HEADER \
-		--include-after-body $FOOTER \
+		"${ARGS[@]}" \
 		-o $OUT
-	
-	echo Published $(basename "$FILE") to $(basename "$OUT")
+	if [ $VERBOSE == 1 ]; then
+		echo Published $(basename "$FILE") to $(basename "$OUT")
+	fi
 done
 
 exit 0
