@@ -12,7 +12,7 @@
 		<link href="https://ramirobasile.github.io/website2/blog/gnome.html" />
 		<updated>2020-12-12</updated>
 		<content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
+<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
 <div id="header">
 <h1 class="title">Si pensás probar GNOME, leé esto</h1>
 <h3 class="date">2020-12-12</h3>
@@ -23,7 +23,7 @@
 <h2 id="repartí-tus-ventanas-en-escritorios">Repartí tus ventanas en escritorios</h2>
 <p>El concepto clave de GNOME es usar escritorios—uno para tu navegador, otro para tus PDF de álgebra y calculadora, otro para tus terminales y editor de texto, etc. La idea es que vayas haciendo y deshaciendo escritorios en los que pones aplicaciones más o menos relacionadas. Así vas a tener todas tus ventanas siempre a la vista y compartimentalizadas para acceso rápido.</p>
 <div class="figure">
-<img src="resources/workspaces.gif" title="GIF demostrando los escritorios de GNOME" alt=""/>
+<img src="resources/escritorios.gif" title="GIF demostrando los escritorios de GNOME" alt=""/>
 <p class="caption"> </p>
 </div>
 <p>A medida que te vas acostumbrando a usar los escritorios, capaz te vayas dando cuenta que minimizar o esconder ventanas en el tray, o tener una barra de tareas donde figuren todas, eran cosas no tan indispensables. Puede ser que te empiece a ser más cómodo moverte a otro escritorio cuando te quedas sin lugar, en vez de pasártela escondiendo o toqueteando los tamaños y posiciones de las ventanas para hacer lugar en la pantalla—en especial si te avivás que tener iconos en el escritorio cumple poco más que abrir el explorador de archivos y listo, lo que te saca otra razón para estar toqueteando ventanas, al no necesitar hacer espacio para ver el escritorio porque hay nada ahí.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
@@ -62,7 +62,7 @@
 		<link href="https://ramirobasile.github.io/website2/blog/moto-g-bootloader.html" />
 		<updated>2020-06-02</updated>
 		<content type="html"><body>
-<p>🏠 <a href="../index.html">Volver al índice</a></p>
+<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
 <div id="header">
 <h1 class="title">Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</h1>
 <h3 class="date">2020-06-02</h3>
@@ -81,6 +81,36 @@
 <li><p>Ahora abri el READMEFIRST.rtf y, <strong>leyendolo con cuidado</strong>, hace lo que te diga</p></li>
 <li><p>Y una vez hecho eso ya podes ingresar la clave para desbloquear el bootloader y todo deberia andar perfecto</p></li>
 </ul>
+<br/>
+
+<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
+
+<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+</body></content>
+	</entry>
+
+	<entry>
+		<title>No es de Ghibli I: Royal Space Force</title>
+		<link href="https://ramirobasile.github.io/website2/blog/royal-space-force.html" />
+		<updated>2020-12-14</updated>
+		<content type="html"><body>
+<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
+<div id="header">
+<h1 class="title">No es de Ghibli I: Royal Space Force</h1>
+<h3 class="date">2020-12-14</h3>
+</div>
+<p>Royal Space Force es una película que nunca veo recomendada y es una lástima porque es muy linda—visual y narrativamente.</p>
+<div class="figure">
+<img src="resources/lahdatt.gif" title="GIF animado de una escena cortita, melancólica, de Royal Space Force con el protagonista tomando un trago solo en un balcón de noche" alt=""/>
+<p class="caption"> </p>
+</div>
+<p>Es una película de ciencia ficción idealista que transcurre en un mundo ficticio parecido al nuestro. En un acto de moderación que banco mucho, si bien este mundo esta lleno de peculiaridades culturales, tecnológicas o históricas que se sirve de constraste, la película se las gurada en el bolsillo y las deja en segundo plano. Ningún personaje explica nada del mundo en el que vive y los contrastes quedan como detalles de fondo—constantes y ninguno menos imaginativo que el anterior—pero nunca llamando mucho la atención o suspendiendo la narrativa.</p>
+<p>Esto hace la película fantástica para mi, logra que se sienta muy verosímil el mundo y le deja a la trama moverse a un paso relajado hacia una culminación emocionalmente impactante muy merecida.</p>
+<div class="figure">
+<img src="resources/calle.gif" title="GIF animado de una calle en Royal Space Force" alt=""/>
+<p class="caption"> </p>
+</div>
+<p>También es visualmente hermosa y tiene una de las mejores bandas sonoras del universo. Mírenla.</p>
 <br/>
 
 <p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
