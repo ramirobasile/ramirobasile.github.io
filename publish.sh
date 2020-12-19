@@ -1,20 +1,8 @@
 #!/bin/bash
+# Usage: sh publish.sh <file | directory> <file | directory>...
+
 set -euo pipefail
 IFS=$'\n\t'
-
-VERBOSE=0
-
-while getopts "hv" OPT; do
-	case "$OPT" in
-		v) VERBOSE=1;;
-		h) 	echo 'Usage:'
-			echo '	publish.sh [-h] [-v] <file | directory> <file | directory>...'
-			exit 0
-			;;
-	esac
-done
-
-shift $(( OPTIND-1 ))
 
 # TODO arreglar for
 # TODO comentarios
@@ -46,9 +34,8 @@ for FILE in $(find $@ -maxdepth 1 -type f -name "*.md" -exec realpath {} \;); do
 		--email-obfuscation=references \
 		"${ARGS[@]}" \
 		-o $OUT
-	if [ $VERBOSE == 1 ]; then
-		echo Published $(basename "$FILE") to $(basename "$OUT")
-	fi
+		
+	echo Published $(basename "$FILE") to $(basename "$OUT")
 done
 
 exit 0

@@ -117,4 +117,25 @@
 <p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
 	</entry>
+
+	<entry>
+		<title>Flatpak y sandboxing</title>
+		<link href="https://ramirobasile.github.io/website2/blog/flatpak.html" />
+		<updated>2020-12-19</updated>
+		<content type="html"><body>
+<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
+<div id="header">
+<h1 class="title">Flatpak y sandboxing</h1>
+<h3 class="date">2020-12-19</h3>
+</div>
+<p>Flatpak es excelente. La idea de tener runtimes arregla un montón de los problemas que tiene la distribución de software en Linux. Por dar un par de ejemplos, te dejan correr versiones distintas del mismo programa en paralelo, hacen los bug reports más útiles al todos venir de una plataforma homogénea, no ata a los desarrolladores a versiones específicas de dependencias y demanda menos coordinación entre desarrolladores y mantainers. Si, lo pagas con redundancia y programas más pesados, pero vale la pena por el precio del gigabyte hoy en día.</p>
+<p>Y me encataría usar flatpak si fuera solamente un package manager, pero, lamentablemente flatpak también hace sandboxing—y es cosa de bajarte dos o tres flatpaks para que te encuentres algún drama con los permisos. Realmente esta muy en tu cara para algo que por diseño debería ser imperceptible. Si, técnicamente es la culpa de las malas implementaciones de aplicaciones, pero, ¿realmente hace falta que existan en un primer lugar? ¿Hace falta tener sandboxing en el contexto de escritorio, y en especial cuando todo tu software es libre? Soy medio un nabo yo en estos temas de seguridad pero, al menos en el escritorio, veniamos bastante bien hasta ahora sin sandboxing ¿no?</p>
+<p>Me parece que desconfiar por defecto no esta mal—es más, es la única manera de manejarse con software propietario—pero capaz es una reacción un poco exagerada hacia el software libre. Y si vamos a estar poniendo esfuerzo en que el software propietario sea más usable en vez de dirigirlo a fomentar y crear software libre, entonces creo que estamos haciendo algo mal.</p>
+<br/>
+
+<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
+
+<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+</body></content>
+	</entry>
 </feed>
