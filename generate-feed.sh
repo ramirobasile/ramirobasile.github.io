@@ -39,7 +39,7 @@ fi
 for FILE in $(find $@ -maxdepth 1 -type f -name "*.html" -exec realpath {} \;); do
 	TITLE=$(xmllint --html --xpath '//title/text()' "$FILE")
 	DATE=$(xmllint --html --xpath '//*[@class="date"]/text()' "$FILE")
-	LINK='https://ramirobasile.github.io/website2/'$(realpath --relative-to=. "$FILE")
+	LINK='https://ramirobasile.github.io/'$(realpath --relative-to=. "$FILE")
 	CONTENT=$(xmllint --html --xpath 'html/body' "$FILE")
 	
 	ENTRY='
