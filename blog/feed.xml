@@ -8,38 +8,6 @@
     </author>
 
 	<entry>
-		<title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
-		<link href="https://ramirobasile.github.io/blog/moto-g-bootloader.html" />
-		<updated>2020-06-02</updated>
-		<content type="html"><body>
-<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
-<div id="header">
-<h1 class="title">Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</h1>
-<h3 class="date">2020-06-02</h3>
-</div>
-<p>Si por alguna razón estabas buscando rootear o flashearle otro ROM a tu Moto G1, hay una chance de que no logres desbloquear el bootloader.</p>
-<p>A mi me paso con un XT1032, y según entiendo cualquier Moto G1 con Android 4.4.4 tiene este problema gracias a un bug. El problema que tenía yo era que, una vez que ingresaba la clave que te manda por mail Motorola para desbloquear el bootloader, me tiraba “Password incorrect” o algo parecido. <strong>Esto es un bug</strong>, probablemente no es que copiaste mal la clave.</p>
-<p>Motorola sacó un fix, hace tiempo, pero fue un dolor de huevos encontrarlo porque el hilo original del foro de Motorola ya no existe y de culo lo encontre en otro <a href="https://forum.xda-developers.com/moto-g/general/solved-moto-g-unlock-bootloader-t3114322">hilo de XDA</a>; asi que lo dejo acá para la posteridad:</p>
-<ul>
-<li><p><a href="magnet:?xt=urn:btih:22827885746470081f5011dcbecae6af6473908a&amp;dn=G%5F4.4.4.BL%5FFix.zip">Magnet link</a> (1,98 MB)</p></li>
-<li><p><a href="https://drive.google.com/file/d/1VCc70WFL8LJ2rDHUWibYatKRjrGi_Elp/view?usp=sharing">Google Drive</a> (1,98 MB)</p></li>
-</ul>
-<h2 id="como-arreglar-y-desbloquear-el-bootloader">Como arreglar y desbloquear el bootloader</h2>
-<ul>
-<li><p>Bajate el fix y extraelo en algún lado</p></li>
-<li><p>Seguí todos los pasos de la <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">página de Motorola</a> hasta que te diga que ingreses la clave</p></li>
-<li><p>Ahora abri el READMEFIRST.rtf y, <strong>leyendolo con cuidado</strong>, hace lo que te diga</p></li>
-<li><p>Y una vez hecho eso ya podes ingresar la clave para desbloquear el bootloader y todo deberia andar perfecto</p></li>
-</ul>
-<br/>
-
-<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
-
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-	</entry>
-
-	<entry>
 		<title>Si pensás probar GNOME, leé esto</title>
 		<link href="https://ramirobasile.github.io/blog/gnome.html" />
 		<updated>2020-12-12</updated>
@@ -85,7 +53,60 @@
 
 <p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
 
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+<p><small>© 2020, 2021 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+</body></content>
+	</entry>
+
+	<entry>
+		<title>Flatpak y sandboxing</title>
+		<link href="https://ramirobasile.github.io/blog/flatpak.html" />
+		<updated>2020-12-19</updated>
+		<content type="html"><body>
+<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
+<div id="header">
+<h1 class="title">Flatpak y sandboxing</h1>
+<h3 class="date">2020-12-19</h3>
+</div>
+<p>Flatpak es excelente. La idea de tener runtimes arregla un montón de los problemas que tiene la distribución de software en Linux. Por dar un par de ejemplos, te dejan correr versiones distintas del mismo programa en paralelo, hacen los bug reports más útiles al todos venir de una plataforma homogénea, no ata a los desarrolladores a versiones específicas de dependencias y demanda menos coordinación entre desarrolladores y mantainers. Si, lo pagas con redundancia y programas más pesados, pero vale la pena por el precio del gigabyte hoy en día.</p>
+<p>Y me encataría usar flatpak si fuera solamente un package manager, pero, lamentablemente, flatpak también hace sandboxing—y es cosa de bajarte dos o tres flatpaks para que te encuentres algún drama con los permisos. Realmente está muy en tu cara para algo que por diseño debería ser imperceptible. Si, técnicamente es la culpa de las malas implementaciones de aplicaciones, pero, ¿realmente hace falta que existan en un primer lugar? ¿Hace falta tener sandboxing en el contexto de escritorio, y en especial cuando todo tu software es libre? Soy medio un nabo yo en estos temas de seguridad pero, al menos en el escritorio, veniamos bastante bien hasta ahora sin sandboxing ¿no?</p>
+<p>Me parece que desconfiar por defecto no está mal—es más, es la única manera de manejarse con software propietario—pero capaz es una reacción un poco exagerada hacia el software libre. Y si vamos a estar poniendo esfuerzo en que el software propietario sea más usable en vez de dirigirlo a fomentar y crear software libre, entonces creo que estamos haciendo algo mal.</p>
+<br/>
+
+<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
+
+<p><small>© 2020, 2021 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+</body></content>
+	</entry>
+
+	<entry>
+		<title>Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</title>
+		<link href="https://ramirobasile.github.io/blog/moto-g-bootloader.html" />
+		<updated>2020-06-02</updated>
+		<content type="html"><body>
+<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
+<div id="header">
+<h1 class="title">Como desbloquear el bootloader de un Moto G (falcon) 4.4.4</h1>
+<h3 class="date">2020-06-02</h3>
+</div>
+<p>Si por alguna razón estabas buscando rootear o flashearle otro ROM a tu Moto G1, hay una chance de que no logres desbloquear el bootloader.</p>
+<p>A mi me paso con un XT1032, y según entiendo cualquier Moto G1 con Android 4.4.4 tiene este problema gracias a un bug. El problema que tenía yo era que, una vez que ingresaba la clave que te manda por mail Motorola para desbloquear el bootloader, me tiraba “Password incorrect” o algo parecido. <strong>Esto es un bug</strong>, probablemente no es que copiaste mal la clave.</p>
+<p>Motorola sacó un fix, hace tiempo, pero fue un dolor de huevos encontrarlo porque el hilo original del foro de Motorola ya no existe y de culo lo encontre en otro <a href="https://forum.xda-developers.com/moto-g/general/solved-moto-g-unlock-bootloader-t3114322">hilo de XDA</a>; asi que lo dejo acá para la posteridad:</p>
+<ul>
+<li><p><a href="magnet:?xt=urn:btih:22827885746470081f5011dcbecae6af6473908a&amp;dn=G%5F4.4.4.BL%5FFix.zip">Magnet link</a> (1,98 MB)</p></li>
+<li><p><a href="https://drive.google.com/file/d/1VCc70WFL8LJ2rDHUWibYatKRjrGi_Elp/view?usp=sharing">Google Drive</a> (1,98 MB)</p></li>
+</ul>
+<h2 id="como-arreglar-y-desbloquear-el-bootloader">Como arreglar y desbloquear el bootloader</h2>
+<ul>
+<li><p>Bajate el fix y extraelo en algún lado</p></li>
+<li><p>Seguí todos los pasos de la <a href="https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a">página de Motorola</a> hasta que te diga que ingreses la clave</p></li>
+<li><p>Ahora abri el READMEFIRST.rtf y, <strong>leyendolo con cuidado</strong>, hace lo que te diga</p></li>
+<li><p>Y una vez hecho eso ya podes ingresar la clave para desbloquear el bootloader y todo deberia andar perfecto</p></li>
+</ul>
+<br/>
+
+<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
+
+<p><small>© 2020, 2021 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
 	</entry>
 
@@ -114,28 +135,7 @@
 
 <p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
 
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
-</body></content>
-	</entry>
-
-	<entry>
-		<title>Flatpak y sandboxing</title>
-		<link href="https://ramirobasile.github.io/blog/flatpak.html" />
-		<updated>2020-12-19</updated>
-		<content type="html"><body>
-<p class="home">🏠 <a href="../index.html">Volver al índice</a></p>
-<div id="header">
-<h1 class="title">Flatpak y sandboxing</h1>
-<h3 class="date">2020-12-19</h3>
-</div>
-<p>Flatpak es excelente. La idea de tener runtimes arregla un montón de los problemas que tiene la distribución de software en Linux. Por dar un par de ejemplos, te dejan correr versiones distintas del mismo programa en paralelo, hacen los bug reports más útiles al todos venir de una plataforma homogénea, no ata a los desarrolladores a versiones específicas de dependencias y demanda menos coordinación entre desarrolladores y mantainers. Si, lo pagas con redundancia y programas más pesados, pero vale la pena por el precio del gigabyte hoy en día.</p>
-<p>Y me encataría usar flatpak si fuera solamente un package manager, pero, lamentablemente, flatpak también hace sandboxing—y es cosa de bajarte dos o tres flatpaks para que te encuentres algún drama con los permisos. Realmente está muy en tu cara para algo que por diseño debería ser imperceptible. Si, técnicamente es la culpa de las malas implementaciones de aplicaciones, pero, ¿realmente hace falta que existan en un primer lugar? ¿Hace falta tener sandboxing en el contexto de escritorio, y en especial cuando todo tu software es libre? Soy medio un nabo yo en estos temas de seguridad pero, al menos en el escritorio, veniamos bastante bien hasta ahora sin sandboxing ¿no?</p>
-<p>Me parece que desconfiar por defecto no está mal—es más, es la única manera de manejarse con software propietario—pero capaz es una reacción un poco exagerada hacia el software libre. Y si vamos a estar poniendo esfuerzo en que el software propietario sea más usable en vez de dirigirlo a fomentar y crear software libre, entonces creo que estamos haciendo algo mal.</p>
-<br/>
-
-<p><small>Cualquier duda o comentario mandamelo a <a href="mailto:ramirobasile1@gmail.com" class="email">ramirobasile1@gmail.com</a>.</small></p>
-
-<p><small>© 2020 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
+<p><small>© 2020, 2021 Ramiro Basile. Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</small></p>
 </body></content>
 	</entry>
 </feed>
